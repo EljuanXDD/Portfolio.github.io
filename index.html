@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Juan José Fernández Giraldo</title>
+    <meta name="description" content="Portafolio creativo premium de Juan José Fernández Giraldo, con diseño editorial, animaciones de alta calidad y experiencia digital de agencia." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Loader inicial premium -->
+    <div class="loader" id="pageLoader">
+      <div class="loader__ring"></div>
+      <span class="loader__text">Cargando experiencia creativa...</span>
+    </div>
+
+    <!-- Barra de progreso de scroll global -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header class="page-header" id="pageHeader">
+      <div class="header-inner">
+        <a href="#hero" class="brand">
+          <span>P</span>ORTFOLIO
+        </a>
+        <nav class="nav-menu" id="navigation">
+          <a class="nav-link active" href="#hero">Inicio</a>
+          <a class="nav-link" href="#about">Sobre mí</a>
+          <a class="nav-link" href="#projects">Proyectos</a>
+          <a class="nav-link" href="#experience">Experiencia</a>
+          <a class="nav-link" href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero principal con canvas y tipografía grande -->
+      <section class="hero-section" id="hero">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="hero-label">Experiencia Creativa</span>
+            <h1 class="hero-title">
+              SOY<br />
+              JUAN JOSÉ<br />
+              FERNÁNDEZ<br />
+              GIRALDO.<br />
+              <span>Diseñador Multimedia.</span>
+            </h1>
+            <p class="hero-description">
+              Formándome en producción multimedia y diseño digital, con enfoque en proyectos visuales de impacto.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary magnetic" href="#projects">Ver proyectos</a>
+              <a class="btn btn-outline magnetic" href="#contact">Comencemos</a>
+            </div>
+            <div class="hero-footer-panel">
+              <div class="typing-panel">
+                <span>Actualidad:</span>
+                <strong id="typingText">Diseño UX.</strong>
+              </div>
+              <div class="scroll-hint">
+                <span>Scroll</span>
+                <div class="scroll-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card" data-tilt>
+              <div class="hero-card__glow"></div>
+              <img src="assets/icon.jpeg" alt="Foto de perfil de Juan José Fernández Giraldo" class="hero-photo" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80'" />
+              <div class="hero-card__spider" aria-hidden="true"></div>
+              <div class="hero-card__tag">Producción Multimedia</div>
+              <div class="hero-card__shadow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Sobre mí con dos columnas y estadísticas -->
+      <section class="section section-about" id="about">
+        <div class="section-header">
+          <span class="section-subtitle">Sobre mí</span>
+          <h2>Formación en producción multimedia con foco en diseño y contenido visual.</h2>
+          <p>Desarrollo soluciones visuales con énfasis en claridad, estética y crecimiento profesional.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card about-media">
+            <div class="glass-panel">
+              <span class="glass-label">01</span>
+              <h3>Identidad con propósito</h3>
+              <p>Desarrollo conceptos visuales claros y con personalidad para proyectos en crecimiento.</p>
+            </div>
+            <div class="portrait-frame"></div>
+          </div>
+
+          <div class="about-copy">
+            <p class="about-intro">
+              Estoy formándome en Producción Multimedia, trabajando con video, audio, motion y diseño digital.
+            </p>
+            <div class="about-stats">
+              <div class="stat-card">
+                <strong class="stat-number" data-target="1">0</strong>
+                <span>Año de formación</span>
+              </div>
+              <div class="stat-card">
+                <strong class="stat-number" data-target="6">0</strong>
+                <span>Herramientas dominadas</span>
+              </div>
+              <div class="stat-card">
+                <strong class="stat-number" data-target="4">0</strong>
+                <span>Proyectos en progreso</span>
+              </div>
+            </div>
+            <div class="about-highlights">
+              <article class="highlight-card" data-tilt>
+                <span class="highlight-label">Diseño</span>
+                <h4>Diseño gráfico y digital</h4>
+                <p>Trabajo con conceptos sólidos y estética limpia para materializar ideas en piezas visuales coherentes.</p>
+              </article>
+              <article class="highlight-card" data-tilt>
+                <span class="highlight-label">3D</span>
+                <h4>Modelado 3D inicial</h4>
+                <p>Exploro modelado y visualización básica en 3D, aplicando texturas simples y composiciones para presentaciones.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills con tarjetas premium y barras animadas -->
+      <section class="section section-skills" id="skills">
+        <div class="section-header">
+          <span class="section-subtitle">Software</span>
+          <h2>Herramientas que manejo como Tecnólogo en Producción Multimedia.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card" data-tilt>
+            <div class="skill-icon"><img src="assets/AI.png" alt="Logo Adobe Illustrator" /></div>
+            <h3>Adobe Illustrator</h3>
+            <p>Ilustración vectorial, creación de logotipos y branding digital.</p>
+          </article>
+          <article class="skill-card" data-tilt>
+            <div class="skill-icon"><img src="assets/PS.png" alt="Logo Adobe Photoshop" /></div>
+            <h3>Adobe Photoshop</h3>
+            <p>Edición de imágenes, retoque fotográfico y composiciones visuales.</p>
+          </article>
+          <article class="skill-card" data-tilt>
+            <div class="skill-icon"><img src="assets/Blender.png" alt="Logo Blender" /></div>
+            <h3>Blender</h3>
+            <p>Modelado 3D, visualización y pruebas de gráficos en movimiento.</p>
+          </article>
+          <article class="skill-card" data-tilt>
+            <div class="skill-icon"><img src="assets/AE.png" alt="Logo Adobe After Effects" /></div>
+            <h3>Adobe After Effects</h3>
+            <p>Motion graphics, animación y composiciones de video.</p>
+          </article>
+          <article class="skill-card" data-tilt>
+            <div class="skill-icon"><img src="assets/PR.png" alt="Logo Adobe Premiere" /></div>
+            <h3>Adobe Premiere</h3>
+            <p>Edición de video para cortos, presentaciones y contenidos audiovisuales.</p>
+          </article>
+          <article class="skill-card" data-tilt>
+            <div class="skill-icon"><img src="assets/AU.png" alt="Logo Adobe Audition" /></div>
+            <h3>Adobe Audition</h3>
+            <p>Edición de audio y mejora de sonido para contenidos multimedia.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Proyectos con filtros y tarjetas grandes -->
+      <section class="section section-projects" id="projects">
+        <div class="section-header">
+          <span class="section-subtitle">Proyectos</span>
+          <h2>Conceptos y ejercicios desarrollados durante mi formación en el SENA.</h2>
+        </div>
+
+        <div class="filter-panel">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="branding">Marca</button>
+          <button class="filter-btn" data-filter="digital">Web</button>
+          <button class="filter-btn" data-filter="motion">Motion</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-category="branding" data-tilt>
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&q=80" alt="Proyecto de marca" />
+              <div class="project-overlay"></div>
+              <span class="project-tag">Marca</span>
+            </div>
+            <div class="project-copy">
+              <h3>Identidad para proyecto estudiantil</h3>
+              <p>Concepto visual con personalidad, pensado para una marca emergente.</p>
+              <a class="project-action" href="#contact">Ver caso</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="digital" data-tilt>
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Experiencia digital" />
+              <div class="project-overlay"></div>
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-copy">
+              <h3>Landing editorial de práctica</h3>
+              <p>Interfaz con ritmo editorial y enfoque claro en el contenido.</p>
+              <a class="project-action" href="#contact">Ver caso</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="motion" data-tilt>
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1517511620798-cec17d428bc0?auto=format&fit=crop&w=1000&q=80" alt="Diseño motion" />
+              <div class="project-overlay"></div>
+              <span class="project-tag">Motion</span>
+            </div>
+            <div class="project-copy">
+              <h3>Animación de presentación</h3>
+              <p>Secuencia visual creada para destacar un mensaje de forma dinámica.</p>
+              <a class="project-action" href="#contact">Ver caso</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experiencia con timeline moderno y tarjetas glass -->
+      <section class="section section-experience" id="experience">
+        <div class="section-header">
+          <span class="section-subtitle">Experiencia</span>
+          <h2>Líneas de tiempo con hitos significativos y presencia visual contundente.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-tilt>
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span>2025</span>
+              <h3>Inicio de formación</h3>
+              <p>Comienzo en diseño digital, interfaces y contenidos multimedia.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-tilt>
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span>2026</span>
+              <h3>Ejercicios y conceptos en desarrollo</h3>
+              <p>Trabajo en propuestas visuales, piezas para clase y materiales de práctica.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Servicios con tarjetas premium y glow -->
+      <section class="section section-services" id="services">
+        <div class="section-header">
+          <span class="section-subtitle">Servicios</span>
+          <h2>Soluciones creativas para marcas que buscan elevar su presencia digital.</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-tilt>
+            <div class="service-icon">01</div>
+            <h3>Estrategia visual</h3>
+            <p>Desarrollo de conceptos que comunican personalidad y coherencia visual.</p>
+          </article>
+          <article class="service-card" data-tilt>
+            <div class="service-icon">02</div>
+            <h3>Diseño web</h3>
+            <p>Páginas y layouts pensados para mostrar contenido de manera clara y moderna.</p>
+          </article>
+          <article class="service-card" data-tilt>
+            <div class="service-icon">03</div>
+            <h3>Motion & interacción</h3>
+            <p>Movimiento sutil para dar vida a proyectos sin saturar la experiencia.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contacto con formulario premium y sección de info -->
+      <section class="section section-contact" id="contact">
+        <div class="section-header">
+          <span class="section-subtitle">Contacto</span>
+          <h2>Listo para aprender, colaborar y construir tu próximo proyecto digital.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-panel glass-panel">
+            <h3>Hablemos de tu próxima práctica o proyecto</h3>
+            <p>Busco oportunidades para seguir aprendiendo y aportar a tus contenidos multimedia.</p>
+            <div class="contact-info-block">
+              <strong>Correo</strong>
+              <a href="mailto:juanjofergi123@gmail.com">juanjofergi123@gmail.com</a>
+            </div>
+            <div class="contact-info-block">
+              <strong>Teléfono</strong>
+              <a href="tel:+573004349525">+57 300 434 9525</a>
+            </div>
+            <div class="contact-info-block">
+              <strong>Ubicación</strong>
+              <span>Colombia</span>
+            </div>
+            <div class="contact-socials">
+              <a href="https://www.instagram.com/j_f3r._g1?igsh=aTNpNHU4anNiZjJn" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </div>
+
+          <form class="contact-form glass-panel">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input id="name" type="text" placeholder="Tu nombre completo" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo</label>
+              <input id="email" type="email" placeholder="hello@correo.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Proyecto</label>
+              <textarea id="message" rows="6" placeholder="Cuéntame tu idea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer minimalista -->
+    <footer class="page-footer">
+      <div class="footer-line"></div>
+      <div class="footer-content">
+        <span class="footer-brand">PORTFOLIO</span>
+        <p>Portafolio en desarrollo con enfoque en producción multimedia.</p>
+        <span>© 2026 Juan José Fernández Giraldo. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <!-- Botón Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+  </body>
+</html>
